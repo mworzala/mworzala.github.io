@@ -4,3 +4,47 @@ body {
 
     overflow: hidden;
 }
+
+.menu-toggle {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 5px;
+
+    margin-bottom: 5px;
+
+    border-radius: 2px;
+    background-color: #2C2C2C;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    font-size: 40px;
+    font-family: Hack, monospace;
+    font-weight: bold;
+}
+
+.footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer a {
+    font-size: 30px;
+    margin: 0 20px;
+
+    color: #2C2C2C;
+}

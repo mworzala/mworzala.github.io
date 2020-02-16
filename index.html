@@ -4,25 +4,45 @@
     <meta charset="UTF-8">
     <title>Matt Worzala</title>
 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+
     <link rel="stylesheet" href="util/reset.css">
     <link rel="stylesheet" href="util/index.css">
     <link rel="stylesheet" href="terminal/terminal.css">
+
+    <script src="https://kit.fontawesome.com/ca10ab4d75.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <div class="content">
-    <div class="terminal">
-        <div class="terminal-log">
-
-        </div>
-        <div class="terminal-input">
-            <label>
-                user /
-                <input type="text">
-            </label>
-        </div>
-
+    <div class="menu-toggle hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
+    <h1 class="title">Matt Worzala</h1>
+    <div class="terminal-wrapper">
+        <div class="terminal">
+            <div class="terminal-title">
+                <h2>guest@mattworzala.com</h2>
+            </div>
+            <div class="terminal-log">
+                <div id="terminal-history" class="terminal-lines"></div>
+                <label class="terminal-input">
+                    <span>guest <span id="terminal-path">/</span> $</span>
+                    <input id="terminal-prompt" type="text" autofocus>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="//github.com/mworzala"><i class="fab fa-github"></i></a>
+        <a href="//github.com/mworzala"><i class="fas fa-file"></i></a>
+    </div>
+
+    <script src="terminal/commands.js"></script>
+    <script src="terminal/projects.js"></script>
+    <script src="terminal/terminal.js"></script>
 </div>
 </body>
 </html>
